@@ -5,7 +5,7 @@ const EditTodo = ({ todo }) => {
 
   const updateTodo = (e) => {
     e.preventDefault();
-    const body = { description };
+    const body = { description  };
     fetch(`http://localhost:5000/todos/${todo.todo_id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -55,7 +55,7 @@ const EditTodo = ({ todo }) => {
                 type="button"
                 className="btn btn-warning"
                 data-bs-dismiss="modal"
-                onClick={(e) => updateTodo(e)}
+                onClick={updateTodo}
               >
                 Edit
               </button>

@@ -1,7 +1,10 @@
 import React, { Fragment, useState } from "react";
 
 const InputTodo = () => {
+  
   const [description, setDescription] = useState("");
+
+
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
@@ -33,3 +36,4 @@ const InputTodo = () => {
 };
 
 export default InputTodo;
+

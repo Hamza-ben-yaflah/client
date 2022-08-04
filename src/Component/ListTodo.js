@@ -9,8 +9,8 @@ const ListTodo = () => {
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-    window.location = "/";
-    // setTodo(todo.filter((element) => element.todo_id !== id));
+
+    setTodo(todo.filter((element) => element.todo_id !== id));
   };
 
   useEffect(() => {
